@@ -13,15 +13,52 @@ const database = [
     }
   ];
 
-function Register(){
+function Register({props}){
     const [list, setList] = React.useState(database);
     const [userName, setUserName] = React.useState('');
     const [Password, setPassword] = React.useState('');
+    const [errorMessages, setErrorMessages] = useState({});
 
   const [isSubmitted, setIsSubmitted] = useState(false);
 
+  console.log(props);
+
   function handleChangeUserName(event){
     setUserName(event.target.value);
+  }
+
+  const errors = {
+    uname: "invalid username",
+    pass: "invalid password"
+  };
+
+    // Generate JSX code for error message
+  const renderErrorMessage = (name) =>
+    name === errorMessages.name && (
+      <div className="error">{errorMessages.message}</div>
+    );
+
+  function PasswordValidation(str){
+    var pattern = new RegExp(
+      "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[-+_!@#$%^&*.,?]).+$"
+    );
+
+    // If the string is empty
+    // then print No
+    if (!str || str.length === 0) {
+      document.write("No" + "<br>");
+      return;
+    }
+
+    // Print Yes If the string matches
+    // with the Regex
+    if (pattern.test(str)) {
+      // document.write("Yes" + "<br>");
+      return true;
+    } else {
+      // document.write("No" + "<br>");
+      return false;
+    }
   }
 
   function handleChangePassword(event){
@@ -29,13 +66,18 @@ function Register(){
   }
 
   function handleAdd() {
-    const newList = list.concat({userName, Password});
-    console.log(newList)
+    if(PasswordValidation(Password)){
+      const newList = list.concat({userName, Password});
+      console.log(newList)
 
-    setList(newList);
-    setUserName('');
-    setPassword('');
-    setIsSubmitted(true);
+      setList(newList);
+      setUserName('');
+      setPassword('');
+      setIsSubmitted(true);
+    }
+    else{
+      setErrorMessages({ name: "pass", message: errors.pass });
+    }
   }
 
   console.log(list);
@@ -50,6 +92,7 @@ function Register(){
           <br/>
           <label>Password</label>
           <input type="text" value={Password} name="pass" onChange={handleChangePassword} required />
+          {renderErrorMessage("pass")}
           <br/>
           <button type="button" onClick={handleAdd}>submit</button>
         </div>
