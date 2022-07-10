@@ -1,0 +1,60 @@
+
+.color{
+    background-color: #DFF6FF;
+    background-image: url(images/Background\ image2.png);
+}
+.container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+
+.b-color{
+    background-color: #1363DF;
+    color: white;
+}
+
+.right{
+    text-align: right;
+    padding: 3%;
+}
+
+.left-spacing{
+    padding-left: 100px;
+    background-color: white;
+}
+.d-grid{
+  padding-top: 30px;
+}
+.mid-align{
+    text-align: center;
+}
+.centre-align{
+    padding: 0% 10%;
+}
+.spacin{
+    padding: 5%;
+}
+input{
+    margin-bottom: 3%;
+}
+h5{
+    padding: 5%;
+}
+
+.Image1{
+    border-radius: 100%;
+    width: 50%;
+}
+.C-align{
+  text-align: center;
+}
+h1{
+    padding: 8%;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+img{
+    width: 20%;
+    padding: 5%;
+}
