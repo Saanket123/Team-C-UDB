@@ -1,3 +1,31 @@
+/* HTML Selector */
+
+h1 {
+    padding: 8%;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+h3 {
+    padding: 3%;
+}
+
+h5 {
+    padding: 5%;
+}
+
+img {
+    width: 20%;
+    padding: 5%;
+}
+
+input {
+    margin-bottom: 3%;
+}
+
+/* First Half Portion */
+/* class selectors */
+
 .color {
     background-color: #DFF6FF;
 }
@@ -13,15 +41,32 @@
     color: white;
 }
 
-.right {
-    text-align: right;
-    padding: 3%;
+.C-align {
+    text-align: center;
 }
+
+.Image1 {
+    border-radius: 100%;
+    width: 50%;
+}
+
+/* Second Half Portion */
 
 .left-spacing {
     padding-left: 100px;
     background-color: white;
 }
+
+.right {
+    text-align: right;
+    padding: 3%;
+}
+
+.centre-align {
+    padding: 0% 10%;
+}
+
+
 
 .d-grid {
     padding-top: 30px;
@@ -31,42 +76,27 @@
     text-align: center;
 }
 
-.centre-align {
-    padding: 0% 10%;
-}
-
 .spacin {
     padding: 5%;
 }
 
-input {
-    margin-bottom: 3%;
-}
 
-h5 {
-    padding: 5%;
-}
 
-.Image1 {
-    border-radius: 100%;
-    width: 50%;
-}
 
-.C-align {
-    text-align: center;
-}
 
-h1 {
-    padding: 8%;
-    font-size: xx-large;
-    font-weight: bolder;
-}
 
-img {
-    width: 20%;
-    padding: 5%;
-}
 
-h3 {
-    padding: 3%;
+
+
+
+
+
+
+
+.fa-brands{
+    font-size: 120%;
+    color: rgb(24, 195, 198);
+}
+.non{
+    text-decoration: none;
 }
