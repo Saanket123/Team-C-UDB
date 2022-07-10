@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import LandingPage from "./LandingPage";
-import {Link, Outlet } from "react-router-dom";
+import {Link, Outlet, Navigate } from "react-router-dom";
 
 
-function SignIn(){
+function SignIn({prop}){
   const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  console.log(prop);
 
   // User Login info
   const database = [
@@ -31,6 +32,7 @@ function SignIn(){
     var { uname, pass } = document.forms[0];
 
     // Find user login info
+    
     const userData = database.find((user) => user.username === uname.value);
 
     // Compare user info
@@ -78,7 +80,7 @@ function SignIn(){
     <div className="app">
       <div className="login-form">
         <div className="title">Sign In</div>
-        {isSubmitted ? <LandingPage/>: renderForm}
+        {isSubmitted ? <Navigate replace to = "/LandingPage/" />: renderForm}
         {/* {isSubmitted ? <div>User is successfully logged in</div>: renderForm} */}
 
         <div>
