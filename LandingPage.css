@@ -1,0 +1,56 @@
+/* navigation bar */
+nav{
+    padding: 0;
+}
+.nav-item{
+    padding: 0 10px;
+}
+.fontIcon{
+    padding-top: 8px;
+}
+li {
+  font-family:'Mingzat', sans-serif;
+}
+h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: xxx-large;
+    padding-left: 50px;
+}
+
+/* Section1 styling */
+.section1{
+    text-align: center;
+    padding: 2% 25% 5%;
+    background-color: whitesmoke;
+}
+.section1 h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: xx-large;
+}
+h2,p{
+    padding-bottom: 30px;
+}
+.email{
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    border-bottom: solid black ;
+    width: 70%;
+}
+button{
+    margin-left: 15px;
+}
+
+/* footer styling */
+footer{
+    background-color: #06283D;
+    color: white;
+    padding: 4% 1% 2%;
+}
+
+th,td{
+    padding: 10px 100px;
+}
+th{
+    font-size: larger;
+}
