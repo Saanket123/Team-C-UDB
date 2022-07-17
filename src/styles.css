@@ -1,0 +1,105 @@
+/* HTML Selector */
+
+h1 {
+    padding: 8%;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+h3 {
+    padding: 3%;
+}
+
+h5 {
+    padding: 5%;
+}
+
+img {
+    width: 25%;
+    padding: 5%;
+}
+
+p{
+    font-size: larger;
+}
+
+/* First Half Portion */
+/* class selectors */
+
+.color {
+    background-color: #DFF6FF;
+}
+
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.b-color {
+    background-color: #1363DF;
+    color: white;
+}
+
+.C-align {
+    text-align: center;
+}
+
+.Image1 {
+    border-radius: 100%;
+    width: 50%;
+}
+
+/* Second Half Portion */
+
+.left-spacing {
+    padding-left: 100px;
+    background-color: white;
+}
+
+.right {
+    text-align: right;
+    padding: 3%;
+}
+
+.centre-align {
+    padding: 0% 10%;
+}
+
+.form-control{
+    margin-bottom: 3%;
+}
+
+
+.d-grid {
+    padding-top: 30px;
+}
+
+.mid-align {
+    text-align: center;
+}
+
+.spacin {
+    padding: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fa-brands{
+    font-size: 120%;
+    color: rgb(24, 195, 198);
+}
+.non{
+    text-decoration: none;
+}
